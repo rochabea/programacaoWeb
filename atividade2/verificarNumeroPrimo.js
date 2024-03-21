@@ -1,21 +1,21 @@
 function verificarNumeroPrimo(n){
     
     if(n <= 1){
-        return false;
+        return "A condição para o número " + n + " ser primo é " + false;
     }
 
     if((n != 2) && (n % 2 === 0)){
-        return false;
+        return "A condição para o número " + n + " ser primo é " + false;
     }
 
     //verificando os impares
     for(let i = 3; i < n; i += 2){
         if(n % i === 0){
-            return false;
+            return "A condição para o número " + n + " ser primo é " + false;
         }
     }
 
-    return true;
+    return "A condição para o número " + n + " ser primo é " + true;
 }
 
 console.log(verificarNumeroPrimo(0)); // false
